@@ -1,0 +1,114 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.app-header {
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.app-header h1 {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  margin: 0;
+  background: linear-gradient(135deg, #fff 0%, var(--primary-neon) 50%, var(--secondary-neon) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  filter: drop-shadow(0 0 15px rgba(0, 243, 255, 0.4));
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from { filter: drop-shadow(0 0 10px rgba(0, 243, 255, 0.4)); }
+  to { filter: drop-shadow(0 0 20px rgba(188, 19, 254, 0.6)); }
+}
+
+.app-header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.filter-container label {
+  margin-right: 15px;
+  font-family: var(--font-heading);
+  color: var(--primary-neon);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.filter-container select {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 1px solid var(--primary-neon);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+  box-shadow: 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+.filter-container select:hover, .filter-container select:focus {
+  background: rgba(0, 243, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+}
+
+.app-footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 60px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .exercise-detail {
+    padding: 20px;
+  }
+
+  .exercise-detail h2 {
+    font-size: 1.8rem;
+  }
+}

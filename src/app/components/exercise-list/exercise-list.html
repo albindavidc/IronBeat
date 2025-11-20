@@ -1,0 +1,11 @@
+<div *ngIf="exercises.length === 0">
+  <p>No exercises found.</p>
+</div>
+
+<div class="exercise-list" *ngIf="exercises.length > 0">
+  <app-exercise-card
+    *ngFor="let exercise of exercises"
+    [exercise]="exercise"
+    (select)="onSelect($event)"
+  ></app-exercise-card>
+</div>

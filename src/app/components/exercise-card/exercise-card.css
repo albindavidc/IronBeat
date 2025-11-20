@@ -1,0 +1,93 @@
+.exercise-card {
+  background: var(--bg-panel);
+  backdrop-filter: blur(10px);
+  border: var(--glass-border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.exercise-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary-neon), var(--secondary-neon));
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), var(--neon-glow);
+  border-color: rgba(0, 243, 255, 0.3);
+}
+
+.exercise-card:hover::before {
+  opacity: 1;
+  box-shadow: 0 0 10px var(--primary-neon);
+}
+
+.exercise-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.difficulty {
+  align-self: flex-start;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.difficulty.beginner {
+  background: rgba(10, 255, 0, 0.1);
+  color: var(--accent-green);
+  border: 1px solid var(--accent-green);
+  box-shadow: 0 0 5px rgba(10, 255, 0, 0.2);
+}
+
+.difficulty.intermediate {
+  background: rgba(0, 243, 255, 0.1);
+  color: var(--primary-neon);
+  border: 1px solid var(--primary-neon);
+  box-shadow: 0 0 5px rgba(0, 243, 255, 0.2);
+}
+
+.difficulty.advanced {
+  background: rgba(188, 19, 254, 0.1);
+  color: var(--secondary-neon);
+  border: 1px solid var(--secondary-neon);
+  box-shadow: 0 0 5px rgba(188, 19, 254, 0.2);
+}
+
+.muscles {
+  margin-top: auto;
+  font-size: 1em;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.muscles strong {
+  color: var(--text-main);
+  font-weight: 600;
+}

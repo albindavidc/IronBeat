@@ -1,0 +1,48 @@
+:root {
+  --bg-dark: #050505;
+  --bg-panel: rgba(20, 20, 30, 0.6);
+  --primary-neon: #00f3ff;
+  --secondary-neon: #bc13fe;
+  --accent-green: #0aff00;
+  --text-main: #e0e0e0;
+  --text-muted: #a0a0a0;
+  --font-heading: 'Orbitron', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+  --neon-glow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  background-image:
+    radial-gradient(circle at 50% 0%, #1a1a2e 0%, transparent 70%),
+    linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(10,10,15,1) 100%);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-neon);
+}
