@@ -1,9 +1,14 @@
 <div class="exercise-card" (click)="onSelect()">
-  <h3>{{ exercise.name }}</h3>
-  <span class="difficulty" [ngClass]="difficultyClass">
-    {{ exercise.difficulty }}
-  </span>
-  <p class="muscles">
-    <strong>Muscles:</strong> {{ exercise.muscleGroups.join(', ') }}
-  </p>
+  <div class="card-image-wrapper" *ngIf="exercise.imageUrl">
+    <img [src]="exercise.imageUrl" [alt]="exercise.name" loading="lazy">
+  </div>
+  <div class="card-content">
+    <h3>{{ exercise.name }}</h3>
+    <span class="difficulty" [ngClass]="difficultyClass">
+      {{ exercise.difficulty }}
+    </span>
+    <p class="muscles">
+      <strong>Muscles:</strong> {{ exercise.muscleGroups.join(', ') }}
+    </p>
+  </div>
 </div>

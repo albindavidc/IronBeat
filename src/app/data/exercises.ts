@@ -11,7 +11,8 @@ export const EXERCISES: Exercise[] = [
       "Keep your body in a straight line from head to heels.",
       "Lower your body until your chest nearly touches the floor.",
       "Pause, then push yourself back up to the starting position."
-    ]
+    ],
+    imageUrl: "images/push-up.png"
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ export const EXERCISES: Exercise[] = [
       "Hang with your arms fully extended.",
       "Pull your body up until your chin is above the bar.",
       "Lower yourself back down with control until your arms are fully extended."
-    ]
+    ],
+    imageUrl: "images/pull-up.gif"
   },
   {
     id: 3,
@@ -36,7 +38,8 @@ export const EXERCISES: Exercise[] = [
       "Keep your chest up and your back straight.",
       "Lower until your thighs are at least parallel to the floor.",
       "Push through your heels to return to the starting position."
-    ]
+    ],
+    imageUrl: "images/squat.png"
   },
   {
     id: 4,
@@ -48,7 +51,8 @@ export const EXERCISES: Exercise[] = [
       "Lower your body by bending your elbows until they are at a 90-degree angle.",
       "Keep your elbows close to your body.",
       "Push yourself back up to the starting position."
-    ]
+    ],
+    imageUrl: "images/dips.png"
   },
   {
     id: 5,
@@ -60,7 +64,8 @@ export const EXERCISES: Exercise[] = [
       "Keep your body in a straight line from head to heels.",
       "Engage your core and hold the position for the desired time.",
       "Do not let your hips sag or pike up."
-    ]
+    ],
+    imageUrl: "images/plank.jpg"
   },
   {
     id: 6,
@@ -73,7 +78,8 @@ export const EXERCISES: Exercise[] = [
       "Your front knee should be directly above your ankle.",
       "Push off the front foot to return to the starting position.",
       "Repeat on the other side."
-    ]
+    ],
+    imageUrl: "images/lunge.png"
   },
   {
     id: 7,
@@ -87,7 +93,8 @@ export const EXERCISES: Exercise[] = [
       "Perform a push-up.",
       "Jump your feet back to the squat position.",
       "Jump up into the air with arms reaching overhead."
-    ]
+    ],
+    imageUrl: "images/burpee.gif"
   },
   {
     id: 8,
@@ -100,7 +107,8 @@ export const EXERCISES: Exercise[] = [
       "Transition your chest over the bar by leaning forward.",
       "Push your body up until your arms are straight.",
       "Lower yourself back down with control."
-    ]
+    ],
+    imageUrl: "images/muscle-up.gif"
   },
   {
     id: 9,
@@ -112,7 +120,8 @@ export const EXERCISES: Exercise[] = [
       "Lower your hips down and back while keeping the non-working leg off the ground.",
       "Go as low as you can while maintaining balance.",
       "Push through your heel to stand back up."
-    ]
+    ],
+    imageUrl: "images/pistol-squat.png"
   },
   {
     id: 10,
@@ -124,6 +133,7 @@ export const EXERCISES: Exercise[] = [
       "Lower your head towards the floor by bending your elbows.",
       "Push yourself back up until your arms are fully extended.",
       "Maintain a tight core throughout the movement."
-    ]
+    ],
+    imageUrl: "images/handstand-push-up.png"
   }
 ];

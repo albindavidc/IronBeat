@@ -4,4 +4,5 @@ export interface Exercise {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
   muscleGroups: string[];
   steps: string[];
+  imageUrl?: string;
 }

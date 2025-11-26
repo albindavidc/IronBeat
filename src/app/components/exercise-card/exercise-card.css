@@ -4,26 +4,13 @@
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid var(--glass-border);
   border-radius: 16px;
-  padding: 24px;
+  overflow: hidden;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
-  overflow: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.exercise-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.03), transparent);
-  transform: translateX(-100%);
-  transition: 0.6s;
 }
 
 .exercise-card:hover {
@@ -33,8 +20,30 @@
   border-color: rgba(0, 243, 255, 0.3);
 }
 
-.exercise-card:hover::before {
-  transform: translateX(100%);
+.card-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.exercise-card:hover .card-image-wrapper img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .exercise-card h3 {
@@ -57,22 +66,16 @@
   margin-right: 5px;
 }
 
-.card-footer {
-  margin-top: auto;
-  padding-top: 15px;
-  border-top: 1px solid var(--glass-border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.difficulty-badge {
+.difficulty {
+  display: inline-block;
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  align-self: flex-start;
 }
 
 .difficulty-beginner {
