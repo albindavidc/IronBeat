@@ -1,14 +1,15 @@
 .app-container {
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #213547;
-  background-color: #f9f9f9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .app-header {
-  background-color: #242424;
+  background-color: rgba(36, 36, 36, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
   padding: 20px;
   text-align: center;
@@ -53,7 +54,10 @@ main {
 }
 
 .app-footer {
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 10px;
   text-align: center;
   font-size: 0.8rem;
