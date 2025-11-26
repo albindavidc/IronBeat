@@ -135,5 +135,98 @@ export const EXERCISES: Exercise[] = [
       "Maintain a tight core throughout the movement."
     ],
     imageUrl: "images/handstand-push-up.png"
+  },
+  {
+    id: 11,
+    name: "Wall Walk",
+    difficulty: "Intermediate",
+    muscleGroups: ["Shoulders", "Core", "Upper Body"],
+    steps: [
+      "Start in a plank position with your feet against a wall.",
+      "Walk your feet up the wall while walking your hands back towards the wall.",
+      "Go as far as comfortable, ideally to a handstand facing the wall.",
+      "Walk back down to the starting position with control."
+    ],
+    imageUrl: "images/wall-walk.jpg"
+  },
+  {
+    id: 12,
+    name: "L-sit",
+    difficulty: "Advanced",
+    muscleGroups: ["Core", "Hip Flexors", "Triceps"],
+    steps: [
+      "Sit on the floor with legs extended.",
+      "Place hands on the floor next to your hips.",
+      "Push down to lift your body off the floor.",
+      "Keep your legs straight and parallel to the floor.",
+      "Hold for time."
+    ],
+    imageUrl: "images/l-sit.jpg"
+  },
+  {
+    id: 13,
+    name: "Bulgarian Split Squat",
+    difficulty: "Intermediate",
+    muscleGroups: ["Quadriceps", "Glutes", "Hamstrings"],
+    steps: [
+      "Stand facing away from a bench.",
+      "Place one foot on the bench behind you.",
+      "Lower your hips until your front thigh is parallel to the floor.",
+      "Push back up to the starting position.",
+      "Keep your torso upright throughout."
+    ],
+    imageUrl: "images/bulgarian-split-squat.png"
+  },
+  {
+    id: 14,
+    name: "Glute Bridge",
+    difficulty: "Beginner",
+    muscleGroups: ["Glutes", "Hamstrings", "Core"],
+    steps: [
+      "Lie on your back with knees bent and feet flat on the floor.",
+      "Lift your hips until your body forms a straight line from shoulders to knees.",
+      "Squeeze your glutes at the top.",
+      "Lower back down with control."
+    ],
+    imageUrl: "images/glute-bridge.png"
+  },
+  {
+    id: 15,
+    name: "Single-Leg Deadlift",
+    difficulty: "Intermediate",
+    muscleGroups: ["Hamstrings", "Glutes", "Balance"],
+    steps: [
+      "Stand on one leg.",
+      "Hinge at your hips to lower your torso while extending the other leg behind you.",
+      "Keep your back straight and core engaged.",
+      "Return to the starting position by engaging your hamstrings and glutes."
+    ],
+    imageUrl: "images/single-leg-deadlift.png"
+  },
+  {
+    id: 16,
+    name: "Dragon Flag",
+    difficulty: "Advanced",
+    muscleGroups: ["Core", "Lats"],
+    steps: [
+      "Lie on a bench and grab the edge behind your head.",
+      "Lift your legs and hips towards the ceiling until your body is vertical.",
+      "Lower your body slowly, keeping it straight.",
+      "Only your shoulders should touch the bench."
+    ],
+    imageUrl: "images/dragon-flag.jpg"
+  },
+  {
+    id: 17,
+    name: "Hanging Windshield Wiper",
+    difficulty: "Advanced",
+    muscleGroups: ["Core", "Obliques"],
+    steps: [
+      "Hang from a bar with arms straight.",
+      "Lift your legs until they are parallel to the floor (or higher).",
+      "Rotate your legs from side to side like a windshield wiper.",
+      "Control the movement with your core."
+    ],
+    imageUrl: "images/hanging-windshield-wiper.gif"
   }
 ];
